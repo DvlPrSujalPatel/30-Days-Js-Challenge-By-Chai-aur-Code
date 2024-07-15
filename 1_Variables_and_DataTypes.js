@@ -3,32 +3,32 @@
 // Task:1Declare a Variable using var, assign it a number, and log the value to the console.
 
 var a = "Sujal"
-// console.log(a);
+ console.log(a);
 
 // Task:1Declare a Variable using let, assign it a sting, and log the value to the console.
 
 let b = "Payal"
-// console.log(b)
+console.log(b)
 
 // Activity 2: Constant Declaration
 
 // Task 3: Declare a Variable using const, assign it a boolean value, and log the value to console
 
 const myVar = true
-// console.log(myVar);
+ console.log(myVar);
 
 // Activiy 3: Data Types
 
 //Task 4: Create variables of different data types (number, string, boolean, Object, array) and log each variable's type using the typeof operator.
 
 let num = 3
-// console.log(typeof num);
+ console.log(typeof num);
 
 let stng = "Sujal Patel"
-// console.log(typeof stng);
+ console.log(typeof stng);
 
 let bln = true
-// console.log(typeof bln);
+ console.log(typeof bln);
 
 let obj = {
     Name: "Sujal",
@@ -38,18 +38,18 @@ let obj = {
 console.log(typeof obj);
 
 let arr = ["Sujal", "Payal", "Patel", "Love"]
-// console.log(typeof arr);
+console.log(typeof arr);
 
 //Activity 4: Reassigning Variables
 
 //Task 5: Declare a variable using let assign it an initial value, reassign a new value, and log both value to the console
 
 let myName = "Sujal"
-// console.log(myName);
+ console.log(myName);
 
 myName = "Sujal Patel"
 
-// console.log(myName);
+ console.log(myName);
 
 //Activity 5: Understanding const
 
@@ -59,9 +59,9 @@ const myConst = "Value"
 
 // myConst = "Value2"
 
-// console.log(myConst);
+ console.log(myConst);
 
-// Declare variables of different data types
+ // Declare variables of different data types
 let numberVar = 10;
 let stringVar = "Hello, world!";
 let booleanVar = true;
