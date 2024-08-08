@@ -122,8 +122,36 @@ list.addEventListener('click', function(event) {
 
 // • Task 10: Add an event listener to a parent element that listens for events from dynamically added child elements.
 
+
+const parentElement = document.getElementById('parentElement');
+const addButton = document.getElementById('addButton');
+
+// Function to handle the click event on the parent element
+function handleClick(event) {
+    if (event.target.tagName === 'BUTTON') {
+        // Create a new child element
+        const newChild = document.createElement('div');
+        newChild.textContent = 'Dynamically Added Child';
+        parentElement.appendChild(newChild);
+    } else if (event.target.tagName === 'DIV') {
+        // Handle the event from the dynamically added child elements
+        console.log('Clicked on dynamically added child:', event.target.textContent);
+    }
+}
+
+// Add a click event listener to the parent element
+parentElement.addEventListener('click', handleClick);
+
+// Add a click event listener to the add button to dynamically add child elements
+addButton.addEventListener('click', function() {
+    const newChild = document.createElement('div');
+    newChild.textContent = 'Dynamically Added Child';
+    parentElement.appendChild(newChild);
+});
+
 // 1. Click Event Script: Write a script that adds a click event listener to a button to change the text content of a paragraph.
 // 2. Mouse Events Script: Create a script that handles mouseover and mouseout events to change the background color of an element.
 // 3. Keyboard Events Script: Write a script that logs key presses and displays input field values using keydown and keyup event listeners.
 // 4. Form Events Script: Create a script that handles form submission and change events on a select dropdown.
 // 5. Event Delegation Script: Write a script that demonstrates event delegation by handling events on dynamically added child elements.
+
